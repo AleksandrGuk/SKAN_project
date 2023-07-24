@@ -1,0 +1,302 @@
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+}
+
+.header {
+  width: 100%;
+  height: 6em;
+
+  font-family: "Inter", sans-serif;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 100%;
+  flex: 1;
+}
+
+.header-mobile{
+  display: none;
+}
+
+/* Navbar component */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 15em;
+  height: 6em;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0 auto;
+}
+
+.navbar__button {
+  color: #000000;
+  text-decoration: inherit;
+}
+
+/* Register component */
+.header_logInBox{
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.register {
+  display: flex;
+  justify-content: space-between;
+  width: 16em;
+  height: max-content;
+}
+
+.register__button {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  background-color: #ffffff;
+  border: 0;
+  opacity: 40%;
+}
+
+.register__divider {
+  width: 2px;
+  height: 1.6em;
+  background-color: #7ce3e1;
+}
+
+.register__enter-button {
+  width: 4em;
+  background-color: #7ce3e1;
+  border: 0;
+  border-radius: 5px;
+}
+
+.register__enter-button a,
+.register__button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* UserBox component */
+
+.user-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 26em;
+}
+
+/*LimitTable component*/
+
+.limit-table {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 17em;
+  height: 5em;
+  font-size: 10px;
+  line-height: 12px;
+
+  background-color: #d9d9d9;
+  border-radius: 5px;
+  opacity: 30%;
+}
+
+.limit-table_loading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 17em;
+  height: 5em;
+  font-size: 10px;
+  line-height: 12px;
+
+  background-color: #d9d9d9;
+  border-radius: 5px;
+  opacity: 30%;
+}
+
+.limit-table__loader-icon{
+  margin: 0 auto;
+}
+
+
+.limit-table__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 9px;
+}
+
+.limit-table__values {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.limit-table__values_used {
+  color: #000;
+  font-family: 'Inter';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 4px;
+}
+
+.limit-table__values_limit {
+  color: #8ac540;
+  font-family: 'Inter';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+div.limit-table__item > p,
+div.limit-table__values > p {
+  margin: 0;
+}
+
+/*UserProfile component*/
+
+.user-profile {
+  display: flex;
+  flex-direction: row;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 0.37em;
+  color: #000000;
+}
+
+.user-info > p {
+  margin: 0;
+}
+
+.user-info__name {
+  font-size: 14px;
+  line-height: 17px;
+  opacity: 70%;
+}
+
+.log-out_btn {
+  font-size: 10px;
+  line-height: 12px;
+  background-color: #ffffff;
+  border: none;
+  opacity: 40%;
+}
+
+.avatar {
+  border-radius: 70%;
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 720px) {
+  .header-container{
+    display: none;
+  }
+
+  .header-mobile{
+    display: flex;
+
+  }
+
+  .burger-menu-box{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header_logInBox-mobile{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .register {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .register__divider{
+    display: none;
+  }
+
+  .register__enter-button{
+    margin-top: 5%;
+    width: 100%;
+    height: 3em;
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: 9em;
+  }
+
+  .navbar__button{
+    color: #ffffff;
+  }
+
+  .register__button {
+    border: none;
+    background-color: #029491;
+    color: #ffffff;
+  }
+
+  .user-profile{
+    justify-content: center;
+    height: 3em;
+  }
+
+  .log-out_btn{
+    width: 18em;
+    height: 3em;
+    font-size: 10px;
+    line-height: 12px;
+    border-radius: 5px;
+    background: #7CE3E1;
+    color: #ffffff;
+  }
+
+  .user-info{
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .avatar{
+    display: none;
+  }
+
+  .user-info__name{
+    color: #ffffff;
+  }
+
+  .limit-table{
+    position: absolute;
+    margin-top: 1em;
+    margin-left: 14em;
+  }
+  .logo {
+    position: absolute;
+  }
+}
